@@ -1,0 +1,5 @@
+New Load.LOAD1 Phases=1 Bus1=64.1 kV=0.23 kW=1 PF=0.95
+New Load.LOAD2 Phases=1 Bus1=286.2 kV=0.23 kW=1 PF=0.95
+New Load.LOAD3 Phases=1 Bus1=367.3 kV=0.23 kW=1 PF=0.95
+New Load.LOAD4 Phases=1 Bus1=442.1 kV=0.23 kW=1 PF=0.95
+New Load.LOAD5 Phases=1 Bus1=459.2 kV=0.23 kW=1 PF=0.95

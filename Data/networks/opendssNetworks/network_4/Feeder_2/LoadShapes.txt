@@ -1,0 +1,16 @@
+New Loadshape.Shape_1 npts=288 interval=0.0833 mult=(file=C:\2014\ENWL_Network_Creation\Feeder_Representation\Load_files_Model\Load_profiles\Load1_5min.csv) useactual=false
+New Loadshape.Shape_2 npts=288 interval=0.0833 mult=(file=C:\2014\ENWL_Network_Creation\Feeder_Representation\Load_files_Model\Load_profiles\Load2_5min.csv) useactual=false
+New Loadshape.Shape_3 npts=288 interval=0.0833 mult=(file=C:\2014\ENWL_Network_Creation\Feeder_Representation\Load_files_Model\Load_profiles\Load3_5min.csv) useactual=false
+New Loadshape.Shape_4 npts=288 interval=0.0833 mult=(file=C:\2014\ENWL_Network_Creation\Feeder_Representation\Load_files_Model\Load_profiles\Load4_5min.csv) useactual=false
+New Loadshape.Shape_5 npts=288 interval=0.0833 mult=(file=C:\2014\ENWL_Network_Creation\Feeder_Representation\Load_files_Model\Load_profiles\Load5_5min.csv) useactual=false
+New Loadshape.Shape_6 npts=288 interval=0.0833 mult=(file=C:\2014\ENWL_Network_Creation\Feeder_Representation\Load_files_Model\Load_profiles\Load6_5min.csv) useactual=false
+New Loadshape.Shape_7 npts=288 interval=0.0833 mult=(file=C:\2014\ENWL_Network_Creation\Feeder_Representation\Load_files_Model\Load_profiles\Load7_5min.csv) useactual=false
+New Loadshape.Shape_8 npts=288 interval=0.0833 mult=(file=C:\2014\ENWL_Network_Creation\Feeder_Representation\Load_files_Model\Load_profiles\Load8_5min.csv) useactual=false
+New Loadshape.Shape_9 npts=288 interval=0.0833 mult=(file=C:\2014\ENWL_Network_Creation\Feeder_Representation\Load_files_Model\Load_profiles\Load9_5min.csv) useactual=false
+New Loadshape.Shape_10 npts=288 interval=0.0833 mult=(file=C:\2014\ENWL_Network_Creation\Feeder_Representation\Load_files_Model\Load_profiles\Load10_5min.csv) useactual=false
+New Loadshape.Shape_11 npts=288 interval=0.0833 mult=(file=C:\2014\ENWL_Network_Creation\Feeder_Representation\Load_files_Model\Load_profiles\Load11_5min.csv) useactual=false
+New Loadshape.Shape_12 npts=288 interval=0.0833 mult=(file=C:\2014\ENWL_Network_Creation\Feeder_Representation\Load_files_Model\Load_profiles\Load12_5min.csv) useactual=false
+New Loadshape.Shape_13 npts=288 interval=0.0833 mult=(file=C:\2014\ENWL_Network_Creation\Feeder_Representation\Load_files_Model\Load_profiles\Load13_5min.csv) useactual=false
+New Loadshape.Shape_14 npts=288 interval=0.0833 mult=(file=C:\2014\ENWL_Network_Creation\Feeder_Representation\Load_files_Model\Load_profiles\Load14_5min.csv) useactual=false
+New Loadshape.Shape_15 npts=288 interval=0.0833 mult=(file=C:\2014\ENWL_Network_Creation\Feeder_Representation\Load_files_Model\Load_profiles\Load15_5min.csv) useactual=false
+New Loadshape.Shape_16 npts=288 interval=0.0833 mult=(file=C:\2014\ENWL_Network_Creation\Feeder_Representation\Load_files_Model\Load_profiles\Load16_5min.csv) useactual=false

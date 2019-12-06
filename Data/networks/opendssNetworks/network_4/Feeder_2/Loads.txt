@@ -1,0 +1,16 @@
+New Load.LOAD1 Phases=1 Bus1=157.1 kV=0.23 kW=1 PF=0.95 Daily=Shape_1
+New Load.LOAD2 Phases=1 Bus1=162.2 kV=0.23 kW=1 PF=0.95 Daily=Shape_2
+New Load.LOAD3 Phases=1 Bus1=170.3 kV=0.23 kW=1 PF=0.95 Daily=Shape_3
+New Load.LOAD4 Phases=1 Bus1=208.1 kV=0.23 kW=1 PF=0.95 Daily=Shape_4
+New Load.LOAD5 Phases=1 Bus1=270.2 kV=0.23 kW=1 PF=0.95 Daily=Shape_5
+New Load.LOAD6 Phases=1 Bus1=328.3 kV=0.23 kW=1 PF=0.95 Daily=Shape_6
+New Load.LOAD7 Phases=1 Bus1=331.1 kV=0.23 kW=1 PF=0.95 Daily=Shape_7
+New Load.LOAD8 Phases=1 Bus1=343.1 kV=0.23 kW=1 PF=0.95 Daily=Shape_8
+New Load.LOAD9 Phases=1 Bus1=348.2 kV=0.23 kW=1 PF=0.95 Daily=Shape_9
+New Load.LOAD10 Phases=1 Bus1=357.3 kV=0.23 kW=1 PF=0.95 Daily=Shape_10
+New Load.LOAD11 Phases=1 Bus1=365.2 kV=0.23 kW=1 PF=0.95 Daily=Shape_11
+New Load.LOAD12 Phases=1 Bus1=372.1 kV=0.23 kW=1 PF=0.95 Daily=Shape_12
+New Load.LOAD13 Phases=1 Bus1=376.3 kV=0.23 kW=1 PF=0.95 Daily=Shape_13
+New Load.LOAD14 Phases=1 Bus1=379.2 kV=0.23 kW=1 PF=0.95 Daily=Shape_14
+New Load.LOAD15 Phases=1 Bus1=386.1 kV=0.23 kW=1 PF=0.95 Daily=Shape_15
+New Load.LOAD16 Phases=1 Bus1=390.2 kV=0.23 kW=1 PF=0.95 Daily=Shape_16

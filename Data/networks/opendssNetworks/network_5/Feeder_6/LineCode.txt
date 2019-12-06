@@ -1,0 +1,9 @@
+New LineCode..3 nphases=3 R1=0.106 X1=0.068 R0=0.379 X0=0.076 C1=0 C0=0 Units=km
+New LineCode.16_PSC nphases=3 R1=1.15 X1=0.088 R0=1.2 X0=0.088 C1=0 C0=0 Units=km
+New LineCode.25_SAC_XC nphases=3 R1=1.2 X1=0.079 R0=1.3 X0=0.079 C1=0 C0=0 Units=km
+New LineCode.2c_.0145 nphases=3 R1=1.903 X1=0.09 R0=1.903 X0=0.09 C1=0 C0=0 Units=km
+New LineCode.2c_.0225 nphases=3 R1=1.257 X1=0.085 R0=1.257 X0=0.085 C1=0 C0=0 Units=km
+New LineCode.3c_185_SAC_XC nphases=3 R1=0.166 X1=0.074 R0=0.658 X0=0.112 C1=0 C0=0 Units=km
+New LineCode.4_SAC_PC nphases=3 R1=4.61 X1=0.094 R0=4.8 X0=0.094 C1=0 C0=0 Units=km
+New LineCode.4c_.2_SAC nphases=3 R1=0.23 X1=0.069 R0=0.782 X0=0.085 C1=0 C0=0 Units=km
+New LineCode.5c_.1 nphases=3 R1=0.274 X1=0.073 R0=0.959 X0=0.079 C1=0 C0=0 Units=km

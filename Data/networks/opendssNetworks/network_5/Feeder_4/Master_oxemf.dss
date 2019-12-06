@@ -1,0 +1,40 @@
+clear
+new circuit.network1
+
+!Edit Vsource.Source BasekV=11 pu=1.00  ISC3=3000  ISC1=2500
+!Edit Vsource.Source BasekV=11 pu=1.00  ISC3=3000000  ISC1=2500000
+!Edit Vsource.Source basekV=11 pu=1.00 R1=0.0001 X1=0.0001 R0=0.0001 X0=0.0001
+Edit Vsource.Source basekV=0.3984 pu=1.0441767 R1=0.0000001 X1=0.0000001 R0=0.0000001 X0=0.0000001 ! account for 'boost'
+
+!new line.sourceZ bus1=SourceBus bus2=SourceBusZ phases=3 R1=0.51344 X1=2.0537 R0=1.0729 X0=3.2186
+new line.sourceZ bus1=SourceBus bus2=SourceBusZ phases=3 R1=0.000734 X1=0.002937 R0=1.72155 X0=5.164506
+
+Redirect LineCode.txt
+Redirect Transformers.txt
+!edit transformer.TR1 buses=[SourceBusZ,1,]
+edit transformer.TR1 buses=[SourceBusZ,1,] kvs=[0.416,0.416]
+!Redirect LoadShapes.txt
+Redirect Lines.txt
+Redirect "Loads - Copy.txt"
+!Redirect Monitors.txt
+
+!set voltagebases="11,0.3984"
+set voltagebases="0.3984"
+calcvoltagebases
+!buscoords XY_Position.csv
+
+new energymeter.m1 element=transformer.TR1
+
+solve
+
+!set marktransformers=true
+!set markcapacitors=true
+!set markregulators=true
+!plot
+!plot profile phases=all
+
+! steps:
+! 1. put in this new master.dss file
+! 2. copy loads and remove load shapes (Daily=Shape_..\r\n)
+! 3. Remove top line of XY_Position and save as csv.
+! 4. Run!

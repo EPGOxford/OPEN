@@ -1,0 +1,3 @@
+,busA,busB,typeA,typeB,Zseries,Zshunt,kV_A,kV_B
+sub,sourcebusz,rg60,delta,wye-g,(3.4611200000000005e-05+0.00027688960000000004j),0j,4.16,4.16
+xfm1,633,634,wye-g,wye-g,(0.38072320000000004+0.6922240000000001j),0j,4.16,4.16
