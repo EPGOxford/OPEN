@@ -14,13 +14,17 @@ Installation
 
 Download OPEN source code.
 
-Change to folder.
-
-Install requirements.
+If using conda, we suggest creating a new virtual environment from the requirements.txt file:
 
 .. code:: bash
 
-  pip install -r requirements.txt
+  conda create --name <env_name> --file requirements.txt
+
+In addition, you will also need to install cvxopt. This can be installed from conda forge: 
+
+.. code:: bash
+
+  conda install -c conda-forge cvxopt
 
 Getting started
 ----------------

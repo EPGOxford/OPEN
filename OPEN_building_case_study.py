@@ -8,6 +8,7 @@ that the internal temperature remains between 16 and 18 degrees C.
 
 #import modules
 import os
+from os.path import normpath, join
 import copy
 import pandas as pd
 import pandapower as pp
@@ -29,13 +30,17 @@ print('Code started.')
 ############## VERSION ##############
 
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
         
 #######################################
 ###       
 ### Case Study: Building HVAC flexibility
 ###        
 #######################################
+
+path_string = normpath('Results/Building_Case_Study/')
+if not os.path.isdir(path_string):
+    os.makedirs(path_string)
         
 #######################################
 ### STEP 0: Load Data
@@ -293,7 +298,7 @@ if not winterFlag:
     season_str = '_summer'
 else:
     season_str = '_winter'
-path_string = 'Results/Building_Case_Study/'
+
 save_suffix = '.pdf'
 
 plt.figure(num=None, figsize=(6, 2.5), dpi=80, facecolor='w', edgecolor='k') #6,3.75
@@ -310,7 +315,8 @@ plt.legend(loc = 'lower right')
 plt.grid(alpha=0.5)
 plt.show ()
 plt.tight_layout()
-plt.savefig(path_string + 'Demand' + season_str + save_suffix, bbox_inches='tight')
+plt.savefig(join(path_string, normpath('Demand' + season_str + save_suffix)),
+            bbox_inches='tight')
 #HVAC Power
 if not winterFlag:
     plt.figure(num=None, figsize=(6, 2.5), dpi=80, facecolor='w', edgecolor='k') #6,3.75
@@ -328,7 +334,8 @@ if not winterFlag:
     plt.grid(alpha=0.5)
     plt.show ()
     plt.tight_layout()
-    plt.savefig(path_string + 'HVAC'  + season_str + save_suffix, bbox_inches='tight')
+    plt.savefig(join(path_string, normpath('HVAC'  + season_str + save_suffix)),
+                bbox_inches='tight')
 else:
     plt.figure(num=None, figsize=(6, 2.5), dpi=80, facecolor='w', edgecolor='k') #6,3.75
     for i in range(N_BLDGs):
@@ -345,7 +352,8 @@ else:
     plt.grid(alpha=0.5)
     plt.show ()
     plt.tight_layout()
-    plt.savefig(path_string + 'HVAC'  + season_str + save_suffix, bbox_inches='tight')
+    plt.savefig(join(path_string, normpath('HVAC'  + season_str + save_suffix)),
+                bbox_inches='tight')
 
 #Temperature
 plt.figure(num=None, figsize=(6, 2.5), dpi=80, facecolor='w', edgecolor='k') #6,3.75
@@ -363,7 +371,8 @@ plt.legend(loc = 'center right')
 plt.grid(alpha=0.5)
 plt.show ()
 plt.tight_layout()
-plt.savefig(path_string + 'Temp'  + season_str + save_suffix, bbox_inches='tight')
+plt.savefig(join(path_string, normpath('Temp'  + season_str + save_suffix)),
+            bbox_inches='tight')
 
 
 
