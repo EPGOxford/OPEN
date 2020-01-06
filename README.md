@@ -9,18 +9,24 @@ OPEN and the methods used are presented in detail in the following publication:
 
 T. Morstyn, K. Collett, A. Vijay, M. Deakin, S. Wheeler, S. M. Bhagavathy, F. Fele and M. D. McCulloch; *"An Open-Source Platform for Developing Smart Local Energy System Applications”*; University of Oxford Working Paper, 2019
 
+## Documentation
+
+The full OPEN documentation can be found [here](https://open-platform-for-energy-networks.readthedocs.io).
 
 ## Installation
 
 Download OPEN source code.
 
-If using conda, we suggest creating a new virtual environment from the requirements.txt file:
+If using conda, we suggest creating a new virtual environment from the requirements.txt file.
+First, add the following channels to your conda distribution if not already present:
 
-    conda create --name <env_name> --file requirements.txt
+    conda config --add channels invenia
+    conda config --add channels picos
+    conda config --add channels conda_forge
 
-In addition, you will also need to install cvxopt. This can be installed from conda-forge:
+To create the new virtual environment, run:
 
-    conda install -c conda-forge cvxopt
+    conda create --name <env_name> --file requirements.txt python=3.6
 
 ## Getting started
 

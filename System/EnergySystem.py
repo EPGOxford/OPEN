@@ -39,7 +39,7 @@ import matplotlib.pyplot as plt
 from System.Network_3ph_pf import Network_3ph
 import cvxopt
 
-__version__ = "1.0.0"
+__version__ = "1.0.2"
 
 class EnergySystem:
     """
@@ -271,7 +271,7 @@ class EnergySystem:
         ### STEP 3: solve the optimisation
         #######################################
         print('*** SOLVING THE OPTIMISATION PROBLEM ***')
-        prob.solve(solver='cplex', verbose = 0)
+        prob.solve(verbose = 0)
         print('*** OPTIMISATION COMPLETE ***')
         P_ctrl_asset_val = P_ctrl_asset.value
         P_import_val = P_import.value
