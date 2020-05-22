@@ -20,7 +20,7 @@ conditioning (HVAC).
 import numpy as np
 
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 
 
 class Asset:
@@ -75,8 +75,10 @@ class BuildingAsset(Asset):
         Thermal capacitance of building (kWh/Degree C)
     R : float
         Thermal resistance of building to outside environment(Degree C/kW)
-    CoP : float
+    CoP_heating : float
         Coefficient of performance of the heat pump (N/A)
+    CoP_cooling : float
+        Coefficient of performance of the chiller (N/A)
     Ta : numpy.ndarray
         Ambient temperature (Degree C)
     alpha : float
@@ -99,7 +101,7 @@ class BuildingAsset(Asset):
 
 
     """
-    def __init__(self, Tmax, Tmin, Hmax, Cmax, T0, C, R, CoP, Ta, bus_id, dt,
+    def __init__(self, Tmax, Tmin, Hmax, Cmax, T0, C, R, CoP_heating, CoP_cooling, Ta, bus_id, dt,
                  T, dt_ems, T_ems):
         Asset.__init__(self, bus_id, dt, T)
         self.Tmax = Tmax
@@ -111,7 +113,8 @@ class BuildingAsset(Asset):
         self.T0 = T0
         self.C = C
         self.R = R
-        self.CoP = CoP
+        self.CoP_heating = CoP_heating
+        self.CoP_cooling = CoP_cooling
         self.Ta = Ta
         self.dt_ems = dt_ems
         self.T_ems = T_ems

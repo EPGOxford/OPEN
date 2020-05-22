@@ -24,9 +24,9 @@ copyright = u'2019, Thomas Morstyn, Avinash Vijay, Katherine Collet, Filiberto F
 author = u'Thomas Morstyn, Avinash Vijay, Katherine Collet, Filiberto Fele, Matthew Deakin, Sivapriya Mothilal Bhagavathy, Scot Wheeler, Malcolm McCulloch'
 
 # The short X.Y version
-version = u'1.0'
+version = u'1.1'
 # The full version, including alpha/beta/rc tags
-release = u'1.0.2'
+release = u'1.1.0'
 
 
 # -- General configuration ---------------------------------------------------

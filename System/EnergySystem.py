@@ -39,7 +39,7 @@ import matplotlib.pyplot as plt
 from System.Network_3ph_pf import Network_3ph
 import cvxopt
 
-__version__ = "1.0.2"
+__version__ = "1.1.0"
 
 class EnergySystem:
     """
@@ -194,10 +194,11 @@ class EnergySystem:
                                         self.building_assets[i].\
                                         alpha*T_bldg[t-1,i] \
                                         - self.building_assets[i].\
-                                        beta*P_cooling[t-1,i] \
+                                        beta*self.building_assets[i].\
+                                        CoP_cooling*P_cooling[t-1,i] \
                                         + self.building_assets[i].\
                                         beta*self.building_assets[i].\
-                                        CoP*P_heating[t-1,i] \
+                                        CoP_heating*P_heating[t-1,i] \
                                         + self.building_assets[i].\
                                         gamma*self.building_assets[i].\
                                         Ta[t-1])

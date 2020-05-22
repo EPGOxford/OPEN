@@ -30,7 +30,7 @@ print('Code started.')
 ############## VERSION ##############
 
 
-__version__ = "1.0.1"
+__version__ = "1.1.0"
         
 #######################################
 ###       
@@ -103,7 +103,8 @@ Tmin = 16 # degree celsius
 T0 = 17 # degree centigrade
 heatmax = 90 #kW Max heat supplied
 coolmax = 200 #kW Max cooling
-CoP = 3# coefficient of performance
+CoP_heating = 3# coefficient of performance - heating
+CoP_cooling = 1# coefficient of performance - cooling
 #Parameters from MultiSAVES
 C = 500 # kWh/ degree celsius
 R = 0.0337 #degree celsius/kW
@@ -163,13 +164,14 @@ Cmax_bldg_i = coolmax
 T0_i = T0
 C_i = C
 R_i = R
-CoP_i = CoP
+CoP_heating_i = CoP_heating
+CoP_cooling_i = CoP_cooling
 if winterFlag == True:
     Ta_i = 10*np.ones(T_ems)
 else:
     Ta_i = 22*np.ones(T_ems)
 bus_id_bldg_i = bus3
-bldg_i = AS.BuildingAsset(Tmax_bldg_i, Tmin_bldg_i, Hmax_bldg_i, Cmax_bldg_i, T0_i, C_i, R_i, CoP_i, Ta_i, bus_id_bldg_i, dt, T, dt_ems, T_ems)
+bldg_i = AS.BuildingAsset(Tmax_bldg_i, Tmin_bldg_i, Hmax_bldg_i, Cmax_bldg_i, T0_i, C_i, R_i, CoP_heating_i, CoP_cooling_i, Ta_i, bus_id_bldg_i, dt, T, dt_ems, T_ems)
 building_assets.append(bldg_i)
 N_BLDGs = len(building_assets)
     
