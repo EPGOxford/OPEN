@@ -774,11 +774,16 @@ class EnergySystem:
         print('*** SOLVING THE OPTIMISATION PROBLEM ***')
         prob.solve(verbose = 0)
         print('*** OPTIMISATION COMPLETE ***')
-        P_ES_val = np.array(P_ES.value)
-        P_import_val = np.array(P_import.value)
-        P_export_val = np.array(P_export.value)
-        P_demand_val = np.array(P_demand)
-        E_T_min_val = np.array(E_T_min.value)
+        P_ES_val = np.matrix(P_ES.value)
+        P_import_val = np.matrix(P_import.value)
+        P_export_val = np.matrix(P_export.value)
+        P_demand_val = np.matrix(P_demand)
+        E_T_min_val = np.matrix(E_T_min.value)
+        # P_ES_val = np.array(P_ES.value)
+        # P_import_val = np.array(P_import.value)
+        # P_export_val = np.array(P_export.value)
+        # P_demand_val = np.array(P_demand)
+        # E_T_min_val = np.array(E_T_min.value)
         return {'P_ES_val':P_ES_val,\
                 'P_import_val':P_import_val,\
                 'P_export_val':P_export_val,\
@@ -1336,7 +1341,7 @@ class EnergySystem:
         # minimum terminal energy dummy variable  constraint
         prob.add_constraint(E_T_min[i] >= 0)
         #coeff for objective terminal soft constraint
-        terminal_const = 1e12
+        terminal_const = 1e3
         prices_import = pic.new_param('prices_import',
                                       self.market.prices_import)
         prices_export = pic.new_param('prices_export',
@@ -1361,10 +1366,10 @@ class EnergySystem:
         print('*** SOLVING THE OPTIMISATION PROBLEM ***')
         prob.solve(verbose = 0)
         print('*** OPTIMISATION COMPLETE ***')
-        P_ES_val = np.array(P_ES.value)
-        P_import_val = np.array(P_import.value)
-        P_export_val = np.array(P_export.value)
-        P_demand_val = np.array(P_demand)
+        P_ES_val = np.matrix(P_ES.value)
+        P_import_val = np.matrix(P_import.value)
+        P_export_val = np.matrix(P_export.value)
+        P_demand_val = np.matrix(P_demand)
         return {'P_ES_val':P_ES_val,
                 'P_import_val':P_import_val,
                 'P_export_val':P_export_val,

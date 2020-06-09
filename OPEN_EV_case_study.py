@@ -176,6 +176,7 @@ if run_opt ==1:
     
     # Electric Vehicle (EV) parameters
     N_EVs = 80  # number of EVs
+    #N_EVs = 2  # number of EVs
     Emax_EV = 36  # maximum EV energy level
     Emin_EV = 0  # minimum EV energy level
     P_max_EV = 6.6  # maximum EV charging power
