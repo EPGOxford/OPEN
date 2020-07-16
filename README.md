@@ -22,7 +22,7 @@ First, add the following channels to your conda distribution if not already pres
 
     conda config --add channels invenia
     conda config --add channels picos
-    conda config --add channels conda_forge
+    conda config --add channels conda-forge
 
 To create the new virtual environment, run:
 
